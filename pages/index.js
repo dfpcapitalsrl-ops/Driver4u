@@ -9,9 +9,9 @@ export default function Home() {
           </a>
 
           <nav className="main-nav">
+            <a href="#flotta">Flotta</a>
             <a href="#servizi">Servizi</a>
             <a href="#vantaggi">Perché noi</a>
-            <a href="#flotta">Flotta</a>
             <a href="#aziende">Aziende</a>
             <a href="#contatti">Contatti</a>
           </nav>
@@ -103,7 +103,144 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="servizi" className="section">
+        <section id="flotta" className="section">
+          <div className="container">
+            <div className="section-heading">
+              <p className="eyebrow">Flotta</p>
+              <h2>Veicoli eleganti per un’esperienza di livello business</h2>
+              <p>
+                La nostra flotta è selezionata per offrire comfort, affidabilità e una
+                presenza coerente con contesti professionali, transfer executive,
+                aeroportuali ed eventi.
+              </p>
+            </div>
+
+            <div className="fleet-top">
+              <div className="fleet-intro-card">
+                <h3>Comfort, immagine e versatilità</h3>
+                <p>
+                  Ogni soluzione è pensata per rispondere a esigenze diverse: transfer
+                  individuali, piccoli gruppi, ospiti VIP, meeting aziendali, fiere,
+                  viaggi con bagagli e tratte medio-lunghe.
+                </p>
+
+                <ul className="check-list">
+                  <li>Interni curati e massimo comfort</li>
+                  <li>Immagine professionale per aziende e ospiti</li>
+                  <li>Spazio per bagagli e transfer aeroportuali</li>
+                  <li>Soluzioni per executive, famiglie e piccoli gruppi</li>
+                </ul>
+              </div>
+
+              <div className="fleet-intro-card">
+                <h3>6 tipologie pronte da personalizzare</h3>
+                <p>
+                  Qui sotto trovi sei finestre già predisposte per caricare le foto reali
+                  della tua flotta. Puoi sostituire ogni riquadro con l’immagine del
+                  veicolo e mantenere il titolo della categoria.
+                </p>
+
+                <div className="fleet-mini-stats">
+                  <div>
+                    <strong>6</strong>
+                    <span>categorie veicolo</span>
+                  </div>
+                  <div>
+                    <strong>Premium</strong>
+                    <span>immagine coordinata</span>
+                  </div>
+                  <div>
+                    <strong>Business</strong>
+                    <span>focus aziende e transfer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="fleet-gallery-grid">
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Business</span>
+                  <h3>Berlina Executive</h3>
+                  <p>
+                    Ideale per manager, appuntamenti, transfer rappresentanza e clienti
+                    business.
+                  </p>
+                </div>
+              </article>
+
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Premium</span>
+                  <h3>Van Business</h3>
+                  <p>
+                    Perfetto per piccoli gruppi, transfer aeroportuali e bagagli.
+                  </p>
+                </div>
+              </article>
+
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Executive</span>
+                  <h3>Auto di rappresentanza</h3>
+                  <p>
+                    Pensata per ospiti VIP, dirigenti e trasferimenti di alto profilo.
+                  </p>
+                </div>
+              </article>
+
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Comfort</span>
+                  <h3>Monovolume premium</h3>
+                  <p>
+                    Spaziosa e comoda per famiglie, eventi e viaggi più lunghi.
+                  </p>
+                </div>
+              </article>
+
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Eventi</span>
+                  <h3>Shuttle dedicato</h3>
+                  <p>
+                    Soluzione utile per fiere, congressi, roadshow e transfer organizzati.
+                  </p>
+                </div>
+              </article>
+
+              <article className="vehicle-card">
+                <div className="vehicle-image-placeholder">
+                  <span>Carica foto</span>
+                </div>
+                <div className="vehicle-card-body">
+                  <span className="fleet-label">Custom</span>
+                  <h3>Soluzione personalizzata</h3>
+                  <p>
+                    Per richieste speciali, itinerari su misura e necessità operative dedicate.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="servizi" className="section section-soft">
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Servizi</p>
@@ -215,47 +352,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="flotta" className="section">
-          <div className="container fleet-grid">
-            <div className="fleet-text">
-              <p className="eyebrow">Flotta</p>
-              <h2>Veicoli eleganti per un’esperienza di livello business</h2>
-              <p>
-                La nostra flotta è selezionata per offrire comfort,
-                affidabilità e una presenza coerente con i contesti
-                professionali e premium.
-              </p>
-              <ul className="check-list">
-                <li>Interni curati e massimo comfort</li>
-                <li>Immagine professionale per aziende e ospiti</li>
-                <li>Spazio per bagagli e transfer aeroportuali</li>
-                <li>Ideale per tratte urbane e intercity</li>
-              </ul>
-            </div>
-
-            <div className="fleet-cards">
-              <article className="fleet-card">
-                <span className="fleet-label">Business</span>
-                <h3>Berline Executive</h3>
-                <p>
-                  Per transfer di rappresentanza, meeting, appuntamenti e ospiti
-                  aziendali.
-                </p>
-              </article>
-
-              <article className="fleet-card">
-                <span className="fleet-label">Premium</span>
-                <h3>Van e soluzioni spaziose</h3>
-                <p>
-                  Perfetti per piccoli gruppi, eventi, fiere e trasferimenti con
-                  bagagli.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="aziende" className="section section-soft">
+        <section id="aziende" className="section">
           <div className="container business-box">
             <div className="business-text">
               <p className="eyebrow">Servizi per aziende</p>
@@ -391,6 +488,7 @@ export default function Home() {
           </div>
 
           <div className="footer-links">
+            <a href="#flotta">Flotta</a>
             <a href="#servizi">Servizi</a>
             <a href="#aziende">Aziende</a>
             <a href="#contatti">Contatti</a>
