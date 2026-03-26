@@ -340,6 +340,114 @@ textarea {
   border-right: 0;
 }
 
+/* FLOTTA */
+.fleet-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.fleet-intro-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.fleet-intro-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.fleet-intro-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.fleet-mini-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.fleet-mini-stats div {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+}
+
+.fleet-mini-stats strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.fleet-mini-stats span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.fleet-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.vehicle-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.vehicle-image-placeholder {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(200, 169, 107, 0.14)),
+    #eef2f6;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.vehicle-image-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 2px dashed rgba(15, 23, 42, 0.18);
+  border-radius: 18px;
+}
+
+.vehicle-image-placeholder span {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.vehicle-card-body {
+  padding: 22px;
+}
+
+.vehicle-card-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.vehicle-card-body p {
+  color: var(--muted);
+}
+
 .trust-item strong {
   display: block;
   margin-bottom: 6px;
@@ -362,7 +470,6 @@ textarea {
 .service-card,
 .advantage-card,
 .testimonial-card,
-.fleet-card,
 .point {
   background: var(--white);
   border: 1px solid var(--line);
@@ -373,7 +480,6 @@ textarea {
 
 .service-card h3,
 .advantage-card h3,
-.fleet-card h3,
 .point h3 {
   font-size: 1.2rem;
   margin-bottom: 12px;
@@ -382,7 +488,6 @@ textarea {
 
 .service-card p,
 .advantage-card p,
-.fleet-card p,
 .point p,
 .testimonial-card p {
   color: var(--muted);
@@ -411,24 +516,6 @@ textarea {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.fleet-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 34px;
-  align-items: center;
-}
-
-.fleet-text h2 {
-  font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.1;
-  margin-bottom: 18px;
-}
-
-.fleet-text p {
-  color: var(--muted);
-  margin-bottom: 24px;
-}
-
 .check-list {
   list-style: none;
 }
@@ -446,11 +533,6 @@ textarea {
   top: 0;
   color: var(--accent);
   font-weight: 800;
-}
-
-.fleet-cards {
-  display: grid;
-  gap: 24px;
 }
 
 .fleet-label {
@@ -606,12 +688,13 @@ textarea {
 
 @media (max-width: 1080px) {
   .hero-grid,
-  .fleet-grid,
+  .fleet-top,
   .business-box,
   .cta-box {
     grid-template-columns: 1fr;
   }
 
+  .fleet-gallery-grid,
   .services-grid,
   .advantages-grid,
   .testimonials-grid,
@@ -648,11 +731,13 @@ textarea {
     padding: 72px 0;
   }
 
+  .fleet-gallery-grid,
   .services-grid,
   .advantages-grid,
   .testimonials-grid,
   .business-points,
-  .trust-grid {
+  .trust-grid,
+  .fleet-mini-stats {
     grid-template-columns: 1fr;
   }
 
@@ -665,10 +750,13 @@ textarea {
   }
 
   .section-heading h2,
-  .fleet-text h2,
   .business-text h2,
   .cta-text h2 {
     font-size: 2rem;
+  }
+
+  .vehicle-image-placeholder {
+    height: 200px;
   }
 
   .footer-inner {
