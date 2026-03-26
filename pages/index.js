@@ -1,6 +1,4 @@
-import "./style.css";
-
-export default function App() {
+export default function Home() {
   return (
     <>
       <header className="site-header">
@@ -21,6 +19,12 @@ export default function App() {
           <a href="#contatti" className="btn btn-outline">
             Richiedi preventivo
           </a>
+
+          <button className="menu-toggle" aria-label="Apri menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </header>
 
@@ -32,8 +36,8 @@ export default function App() {
               <h1>Transfer affidabili per aziende, aeroporti, meeting ed eventi</h1>
               <p className="hero-text">
                 Un servizio NCC pensato per chi cerca puntualità, discrezione e
-                un’esperienza di viaggio all’altezza del proprio business.
-                Ideale per manager, clienti, ospiti aziendali e transfer privati premium.
+                un’esperienza di viaggio all’altezza del proprio business. Ideale per
+                manager, clienti, ospiti aziendali e transfer privati premium.
               </p>
 
               <div className="hero-actions">
