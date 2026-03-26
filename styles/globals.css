@@ -1,16 +1,16 @@
 :root {
-  --bg: #0a0a0a;
+  --bg: #f8f6f1;
   --white: #ffffff;
-  --text: #f5e7c2;
-  --muted: #c9b27a;
-  --line: rgba(212, 167, 73, 0.18);
-  --primary: #050505;
-  --primary-2: #111111;
-  --accent: #d4a749;
-  --accent-2: #b8841f;
-  --soft: #111111;
-  --panel: #151515;
-  --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  --text: #1c1a17;
+  --muted: #6f6557;
+  --line: rgba(184, 134, 31, 0.18);
+  --primary: #151515;
+  --primary-2: #222222;
+  --accent: #c89b3c;
+  --accent-2: #a97817;
+  --soft: #f3efe7;
+  --panel: #ffffff;
+  --shadow: 0 20px 50px rgba(28, 26, 23, 0.08);
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 12px;
@@ -61,11 +61,11 @@ textarea {
 }
 
 .section-soft {
-  background: linear-gradient(180deg, #0d0d0d 0%, #121212 100%);
+  background: var(--soft);
 }
 
 .section-dark {
-  background: linear-gradient(135deg, #000000 0%, #0c0c0c 100%);
+  background: linear-gradient(135deg, #1b1b1b 0%, #2a2a2a 100%);
   color: var(--white);
 }
 
@@ -82,14 +82,13 @@ textarea {
 
 .section-heading.light p,
 .section-heading.light h2 {
-  color: #f7e8bf;
+  color: var(--white);
 }
 
 .section-heading h2 {
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.1;
   margin-bottom: 16px;
-  color: #f7e8bf;
 }
 
 .section-heading p {
@@ -120,31 +119,31 @@ textarea {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #f0cd75 50%, var(--accent-2) 100%);
-  color: #111111;
+  background: linear-gradient(135deg, #d8b15a 0%, var(--accent) 55%, var(--accent-2) 100%);
+  color: #171717;
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
   opacity: 0.96;
-  box-shadow: 0 10px 24px rgba(212, 167, 73, 0.22);
+  box-shadow: 0 10px 24px rgba(200, 155, 60, 0.24);
 }
 
 .btn-secondary {
-  background: #171717;
-  color: #f7e8bf;
-  border-color: rgba(212, 167, 73, 0.28);
+  background: var(--white);
+  color: var(--text);
+  border-color: rgba(184, 134, 31, 0.2);
 }
 
 .btn-secondary:hover,
 .btn-outline:hover {
-  background: #1d1d1d;
+  background: #faf7f1;
 }
 
 .btn-outline {
-  border-color: rgba(212, 167, 73, 0.28);
-  color: #f5d98f;
-  background: rgba(212, 167, 73, 0.04);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #fff6df;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .btn-full {
@@ -155,9 +154,9 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(5, 5, 5, 0.94);
+  background: rgba(24, 24, 24, 0.94);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(212, 167, 73, 0.1);
+  border-bottom: 1px solid rgba(200, 155, 60, 0.1);
 }
 
 .header-inner {
@@ -173,7 +172,7 @@ textarea {
   align-items: center;
   gap: 12px;
   font-weight: 800;
-  color: #f4d27a;
+  color: #f0c66a;
 }
 
 .logo-mark {
@@ -182,8 +181,8 @@ textarea {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #f0cd75 0%, var(--accent) 55%, var(--accent-2) 100%);
-  color: #111111;
+  background: linear-gradient(135deg, #efd08c 0%, var(--accent) 55%, var(--accent-2) 100%);
+  color: #171717;
   font-size: 0.95rem;
 }
 
@@ -199,12 +198,12 @@ textarea {
 }
 
 .main-nav a {
-  color: rgba(245, 217, 143, 0.86);
+  color: rgba(255, 240, 205, 0.88);
   font-weight: 500;
 }
 
 .main-nav a:hover {
-  color: #f7e8bf;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -218,15 +217,15 @@ textarea {
   display: block;
   width: 24px;
   height: 2px;
-  background: #f5d98f;
+  background: #f3d28a;
   margin: 5px 0;
 }
 
 .hero {
   padding: 90px 0 70px;
   background:
-    radial-gradient(circle at top right, rgba(212, 167, 73, 0.16), transparent 30%),
-    linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #131313 100%);
+    radial-gradient(circle at top right, rgba(200, 155, 60, 0.18), transparent 30%),
+    linear-gradient(135deg, #181818 0%, #232323 100%);
   color: var(--white);
 }
 
@@ -243,12 +242,12 @@ textarea {
   letter-spacing: -0.04em;
   max-width: 820px;
   margin-bottom: 22px;
-  color: #f7e8bf;
+  color: #fff4da;
 }
 
 .hero-text {
   max-width: 680px;
-  color: rgba(245, 217, 143, 0.8);
+  color: rgba(255, 241, 211, 0.82);
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
@@ -269,25 +268,25 @@ textarea {
 .hero-highlights div {
   padding: 18px;
   border-radius: var(--radius-md);
-  background: rgba(212, 167, 73, 0.05);
-  border: 1px solid rgba(212, 167, 73, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 155, 60, 0.14);
 }
 
 .hero-highlights strong {
   display: block;
   font-size: 1rem;
   margin-bottom: 4px;
-  color: #f7e8bf;
+  color: #fff4da;
 }
 
 .hero-highlights span {
   font-size: 0.95rem;
-  color: rgba(245, 217, 143, 0.7);
+  color: rgba(255, 241, 211, 0.74);
 }
 
 .hero-card {
-  background: rgba(212, 167, 73, 0.05);
-  border: 1px solid rgba(212, 167, 73, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(200, 155, 60, 0.14);
   border-radius: var(--radius-lg);
   padding: 32px;
   box-shadow: var(--shadow);
@@ -297,8 +296,8 @@ textarea {
   display: inline-block;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(212, 167, 73, 0.12);
-  color: #f4d27a;
+  background: rgba(200, 155, 60, 0.16);
+  color: #f4d07f;
   font-size: 0.82rem;
   font-weight: 700;
   margin-bottom: 18px;
@@ -308,7 +307,7 @@ textarea {
   font-size: 1.8rem;
   line-height: 1.15;
   margin-bottom: 18px;
-  color: #f7e8bf;
+  color: #fff4da;
 }
 
 .hero-card ul {
@@ -318,18 +317,18 @@ textarea {
 
 .hero-card li {
   padding: 12px 0;
-  border-bottom: 1px solid rgba(212, 167, 73, 0.1);
-  color: rgba(245, 217, 143, 0.88);
+  border-bottom: 1px solid rgba(200, 155, 60, 0.12);
+  color: rgba(255, 241, 211, 0.88);
 }
 
 .text-link {
-  color: #f4d27a;
+  color: #f2cd79;
   font-weight: 600;
 }
 
 .trust-bar {
-  background: #0d0d0d;
-  border-bottom: 1px solid rgba(212, 167, 73, 0.1);
+  background: #fffdf9;
+  border-bottom: 1px solid rgba(184, 134, 31, 0.1);
 }
 
 .trust-grid {
@@ -341,7 +340,7 @@ textarea {
 
 .trust-item {
   padding: 14px 18px;
-  border-right: 1px solid rgba(212, 167, 73, 0.1);
+  border-right: 1px solid rgba(184, 134, 31, 0.1);
 }
 
 .trust-item:last-child {
@@ -352,7 +351,6 @@ textarea {
   display: block;
   margin-bottom: 6px;
   font-size: 1rem;
-  color: #f7e8bf;
 }
 
 .trust-item span {
@@ -368,7 +366,7 @@ textarea {
 
 .vehicle-card {
   background: var(--panel);
-  border: 1px solid rgba(212, 167, 73, 0.1);
+  border: 1px solid rgba(184, 134, 31, 0.12);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -380,9 +378,9 @@ textarea {
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(135deg, rgba(255, 215, 130, 0.04), rgba(212, 167, 73, 0.12)),
-    #121212;
-  border-bottom: 1px solid rgba(212, 167, 73, 0.1);
+    linear-gradient(135deg, rgba(200, 155, 60, 0.08), rgba(200, 155, 60, 0.16)),
+    #f5efe2;
+  border-bottom: 1px solid rgba(184, 134, 31, 0.1);
   position: relative;
 }
 
@@ -390,7 +388,7 @@ textarea {
   content: "";
   position: absolute;
   inset: 16px;
-  border: 2px dashed rgba(212, 167, 73, 0.22);
+  border: 2px dashed rgba(184, 134, 31, 0.2);
   border-radius: 18px;
 }
 
@@ -398,7 +396,7 @@ textarea {
   position: relative;
   z-index: 1;
   font-weight: 700;
-  color: #f4d27a;
+  color: #8f6618;
 }
 
 .vehicle-card-body {
@@ -409,7 +407,6 @@ textarea {
   font-size: 1.2rem;
   margin-bottom: 10px;
   line-height: 1.2;
-  color: #f7e8bf;
 }
 
 .vehicle-card-body p {
@@ -429,7 +426,7 @@ textarea {
 .testimonial-card,
 .point {
   background: var(--panel);
-  border: 1px solid rgba(212, 167, 73, 0.1);
+  border: 1px solid rgba(184, 134, 31, 0.12);
   border-radius: var(--radius-lg);
   padding: 28px;
   box-shadow: var(--shadow);
@@ -441,11 +438,9 @@ textarea {
   font-size: 1.2rem;
   margin-bottom: 12px;
   line-height: 1.2;
-  color: #f7e8bf;
 }
 
 .service-card p,
-.advantage-card p,
 .point p,
 .testimonial-card p {
   color: var(--muted);
@@ -457,21 +452,25 @@ textarea {
   display: grid;
   place-items: center;
   border-radius: 14px;
-  background: rgba(212, 167, 73, 0.12);
-  color: #f4d27a;
+  background: rgba(200, 155, 60, 0.12);
+  color: #9a6f1a;
   font-weight: 700;
   margin-bottom: 18px;
   font-size: 1.25rem;
 }
 
 .advantages-grid .advantage-card {
-  background: rgba(212, 167, 73, 0.05);
-  border-color: rgba(212, 167, 73, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(200, 155, 60, 0.12);
   box-shadow: none;
 }
 
+.advantages-grid .advantage-card h3 {
+  color: #fff4da;
+}
+
 .advantages-grid .advantage-card p {
-  color: rgba(245, 217, 143, 0.72);
+  color: rgba(255, 241, 211, 0.72);
 }
 
 .check-list {
@@ -496,7 +495,7 @@ textarea {
 .fleet-label {
   display: inline-block;
   margin-bottom: 12px;
-  color: #f4d27a;
+  color: var(--accent);
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -508,7 +507,7 @@ textarea {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 28px;
   background: var(--panel);
-  border: 1px solid rgba(212, 167, 73, 0.1);
+  border: 1px solid rgba(184, 134, 31, 0.12);
   border-radius: 28px;
   padding: 36px;
   box-shadow: var(--shadow);
@@ -518,7 +517,6 @@ textarea {
   font-size: clamp(2rem, 3vw, 2.8rem);
   line-height: 1.1;
   margin-bottom: 16px;
-  color: #f7e8bf;
 }
 
 .business-text p {
@@ -534,12 +532,12 @@ textarea {
 .testimonial-card span {
   display: inline-block;
   margin-top: 14px;
-  color: #f4d27a;
+  color: var(--accent);
   font-weight: 600;
 }
 
 .cta-section {
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #262626 100%);
   color: var(--white);
 }
 
@@ -554,11 +552,11 @@ textarea {
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1.05;
   margin-bottom: 18px;
-  color: #f7e8bf;
+  color: #fff4da;
 }
 
 .cta-text p {
-  color: rgba(245, 217, 143, 0.76);
+  color: rgba(255, 241, 211, 0.78);
   margin-bottom: 28px;
 }
 
@@ -570,17 +568,17 @@ textarea {
 
 .contact-list a,
 .contact-list span {
-  color: rgba(245, 217, 143, 0.92);
+  color: rgba(255, 241, 211, 0.92);
   font-weight: 500;
 }
 
 .contact-form {
-  background: var(--panel);
+  background: #fffdfa;
   color: var(--text);
   border-radius: 24px;
   padding: 28px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(212, 167, 73, 0.1);
+  border: 1px solid rgba(184, 134, 31, 0.12);
 }
 
 .form-group {
@@ -592,24 +590,23 @@ textarea {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 0.95rem;
-  color: #f7e8bf;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  border: 1px solid rgba(212, 167, 73, 0.16);
+  border: 1px solid rgba(184, 134, 31, 0.16);
   border-radius: 14px;
   padding: 14px 16px;
   outline: none;
-  background: #0d0d0d;
-  color: #f7e8bf;
+  background: #ffffff;
+  color: var(--text);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #9f8a59;
+  color: #9b8a72;
 }
 
 .form-group input:focus,
@@ -619,10 +616,10 @@ textarea {
 }
 
 .site-footer {
-  background: #050505;
-  color: rgba(245, 217, 143, 0.85);
+  background: #151515;
+  color: rgba(255, 241, 211, 0.85);
   padding: 34px 0;
-  border-top: 1px solid rgba(212, 167, 73, 0.08);
+  border-top: 1px solid rgba(200, 155, 60, 0.1);
 }
 
 .footer-inner {
@@ -638,7 +635,7 @@ textarea {
 
 .footer-copy {
   max-width: 520px;
-  color: rgba(245, 217, 143, 0.58);
+  color: rgba(255, 241, 211, 0.58);
 }
 
 .footer-links {
@@ -648,11 +645,11 @@ textarea {
 }
 
 .footer-links a {
-  color: rgba(245, 217, 143, 0.78);
+  color: rgba(255, 241, 211, 0.78);
 }
 
 .footer-links a:hover {
-  color: #f7e8bf;
+  color: #ffffff;
 }
 
 @media (max-width: 1080px) {
@@ -677,7 +674,7 @@ textarea {
 
   .trust-item {
     border-right: 0;
-    border-bottom: 1px solid rgba(212, 167, 73, 0.1);
+    border-bottom: 1px solid rgba(184, 134, 31, 0.1);
   }
 
   .trust-item:last-child {
