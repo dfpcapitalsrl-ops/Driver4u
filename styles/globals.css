@@ -170,24 +170,17 @@ textarea {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-weight: 800;
-  color: #f0c66a;
+  flex-shrink: 0;
 }
 
-.logo-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #efd08c 0%, var(--accent) 55%, var(--accent-2) 100%);
-  color: #171717;
-  font-size: 0.95rem;
+.logo-image {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
-.logo-text {
-  letter-spacing: -0.02em;
+.footer-logo-image {
+  height: 48px;
 }
 
 .main-nav {
@@ -419,6 +412,10 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+
+.advantages-grid-three {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .service-card,
@@ -662,6 +659,7 @@ textarea {
   .fleet-gallery-grid,
   .services-grid,
   .advantages-grid,
+  .advantages-grid-three,
   .testimonials-grid,
   .business-points,
   .trust-grid {
@@ -699,6 +697,7 @@ textarea {
   .fleet-gallery-grid,
   .services-grid,
   .advantages-grid,
+  .advantages-grid-three,
   .testimonials-grid,
   .business-points,
   .trust-grid {
@@ -721,6 +720,14 @@ textarea {
 
   .vehicle-image-placeholder {
     height: 200px;
+  }
+
+  .logo-image {
+    height: 42px;
+  }
+
+  .footer-logo-image {
+    height: 40px;
   }
 
   .footer-inner {
