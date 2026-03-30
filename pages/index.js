@@ -3,9 +3,8 @@ export default function Home() {
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <a href="#" className="logo">
-            <span className="logo-mark">D4U</span>
-            <span className="logo-text">Driver4u</span>
+          <a href="#" className="logo" aria-label="Driver4u home">
+            <img src="/logo.png" alt="Driver4u" className="logo-image" />
           </a>
 
           <nav className="main-nav">
@@ -274,7 +273,7 @@ export default function Home() {
               <h2>Un partner affidabile per la mobilità professionale</h2>
             </div>
 
-            <div className="advantages-grid">
+            <div className="advantages-grid advantages-grid-three">
               <article className="advantage-card">
                 <h3>Puntualità reale</h3>
                 <p>
@@ -288,14 +287,6 @@ export default function Home() {
                 <p>
                   Un servizio adatto a contesti business, executive e relazioni
                   con clienti e ospiti.
-                </p>
-              </article>
-
-              <article className="advantage-card">
-                <h3>Comfort premium</h3>
-                <p>
-                  Veicoli spaziosi, curati e adatti a trasferimenti
-                  professionali di qualità.
                 </p>
               </article>
 
@@ -435,9 +426,8 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>
-            <a href="#" className="logo footer-logo">
-              <span className="logo-mark">D4U</span>
-              <span className="logo-text">Driver4u</span>
+            <a href="#" className="logo footer-logo" aria-label="Driver4u home">
+              <img src="/logo.png" alt="Driver4u" className="logo-image footer-logo-image" />
             </a>
             <p className="footer-copy">
               NCC professionale per aziende e privati. Transfer business,
