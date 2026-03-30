@@ -116,8 +116,8 @@ export default function Home() {
 
             <div className="fleet-gallery-grid">
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-1.jpg" alt="Berlina Executive Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Business</span>
@@ -130,8 +130,8 @@ export default function Home() {
               </article>
 
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-2.jpg" alt="Van Business Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Premium</span>
@@ -143,8 +143,8 @@ export default function Home() {
               </article>
 
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-3.jpg" alt="Auto di rappresentanza Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Executive</span>
@@ -156,8 +156,8 @@ export default function Home() {
               </article>
 
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-4.jpg" alt="Monovolume premium Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Comfort</span>
@@ -169,8 +169,8 @@ export default function Home() {
               </article>
 
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-5.jpg" alt="Shuttle dedicato Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Eventi</span>
@@ -182,8 +182,8 @@ export default function Home() {
               </article>
 
               <article className="vehicle-card">
-                <div className="vehicle-image-placeholder">
-                  <span>Carica foto</span>
+                <div className="vehicle-image-real">
+                  <img src="/fleet-6.jpg" alt="Soluzione personalizzata Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Custom</span>
