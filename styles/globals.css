@@ -11,10 +11,13 @@
   --soft: #f3efe7;
   --panel: #ffffff;
   --shadow: 0 20px 50px rgba(28, 26, 23, 0.08);
+  --shadow-soft: 0 12px 30px rgba(28, 26, 23, 0.06);
+  --shadow-strong: 0 28px 70px rgba(28, 26, 23, 0.16);
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 12px;
   --container: 1180px;
+  --header-height: 82px;
 }
 
 * {
@@ -32,6 +35,8 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -51,6 +56,10 @@ textarea {
   font: inherit;
 }
 
+button {
+  border: 0;
+}
+
 .container {
   width: min(100% - 32px, var(--container));
   margin: 0 auto;
@@ -58,6 +67,7 @@ textarea {
 
 .section {
   padding: 100px 0;
+  scroll-margin-top: 110px;
 }
 
 .section-soft {
@@ -65,12 +75,12 @@ textarea {
 }
 
 .section-dark {
-  background: linear-gradient(135deg, #1b1b1b 0%, #2a2a2a 100%);
+  background: linear-gradient(135deg, #191919 0%, #282828 100%);
   color: var(--white);
 }
 
 .section-heading {
-  max-width: 720px;
+  max-width: 760px;
   margin-bottom: 56px;
 }
 
@@ -87,7 +97,8 @@ textarea {
 
 .section-heading h2 {
   font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.1;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   margin-bottom: 16px;
 }
 
@@ -98,9 +109,9 @@ textarea {
 
 .eyebrow {
   display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 14px;
@@ -110,23 +121,26 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 52px;
   border-radius: 999px;
-  padding: 14px 22px;
-  font-weight: 600;
+  padding: 14px 24px;
+  font-weight: 700;
   transition: 0.25s ease;
   cursor: pointer;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, #d8b15a 0%, var(--accent) 55%, var(--accent-2) 100%);
   color: #171717;
+  box-shadow: 0 12px 24px rgba(200, 155, 60, 0.22);
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  opacity: 0.96;
-  box-shadow: 0 10px 24px rgba(200, 155, 60, 0.24);
+  transform: translateY(-2px);
+  opacity: 0.98;
+  box-shadow: 0 16px 34px rgba(200, 155, 60, 0.28);
 }
 
 .btn-secondary {
@@ -146,6 +160,10 @@ textarea {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
 .btn-full {
   width: 100%;
 }
@@ -160,7 +178,7 @@ textarea {
 }
 
 .header-inner {
-  min-height: 82px;
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -193,10 +211,29 @@ textarea {
 .main-nav a {
   color: rgba(255, 240, 205, 0.88);
   font-weight: 500;
+  position: relative;
+  transition: color 0.22s ease;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 
 .main-nav a:hover {
   color: #ffffff;
+}
+
+.main-nav a:hover::after {
+  transform: scaleX(1);
 }
 
 .menu-toggle {
@@ -212,10 +249,11 @@ textarea {
   height: 2px;
   background: #f3d28a;
   margin: 5px 0;
+  border-radius: 999px;
 }
 
 .hero {
-  padding: 90px 0 70px;
+  padding: 96px 0 74px;
   background:
     radial-gradient(circle at top right, rgba(200, 155, 60, 0.18), transparent 30%),
     linear-gradient(135deg, #181818 0%, #232323 100%);
@@ -230,18 +268,18 @@ textarea {
 }
 
 .hero-content h1 {
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
-  line-height: 1;
-  letter-spacing: -0.04em;
-  max-width: 820px;
+  font-size: clamp(2.6rem, 5vw, 4.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  max-width: 860px;
   margin-bottom: 22px;
   color: #fff4da;
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 700px;
   color: rgba(255, 241, 211, 0.82);
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   margin-bottom: 30px;
 }
 
@@ -263,6 +301,13 @@ textarea {
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(200, 155, 60, 0.14);
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.hero-highlights div:hover {
+  transform: translateY(-3px);
+  border-color: rgba(200, 155, 60, 0.28);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .hero-highlights strong {
@@ -298,7 +343,7 @@ textarea {
 
 .hero-card h2 {
   font-size: 1.8rem;
-  line-height: 1.15;
+  line-height: 1.12;
   margin-bottom: 18px;
   color: #fff4da;
 }
@@ -314,9 +359,17 @@ textarea {
   color: rgba(255, 241, 211, 0.88);
 }
 
+.hero-card li:last-child {
+  border-bottom: 0;
+}
+
 .text-link {
   color: #f2cd79;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  color: #ffe1a1;
 }
 
 .trust-bar {
@@ -362,41 +415,14 @@ textarea {
   border: 1px solid rgba(184, 134, 31, 0.12);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
 .vehicle-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 28px 70px rgba(28, 26, 23, 0.16);
+  box-shadow: var(--shadow-strong);
   border-color: rgba(184, 134, 31, 0.3);
-}
-
-.vehicle-image-placeholder {
-  height: 220px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    linear-gradient(135deg, rgba(200, 155, 60, 0.08), rgba(200, 155, 60, 0.16)),
-    #f5efe2;
-  border-bottom: 1px solid rgba(184, 134, 31, 0.1);
-  position: relative;
-}
-
-.vehicle-image-placeholder::before {
-  content: "";
-  position: absolute;
-  inset: 16px;
-  border: 2px dashed rgba(184, 134, 31, 0.2);
-  border-radius: 18px;
-}
-
-.vehicle-image-placeholder span {
-  position: relative;
-  z-index: 1;
-  font-weight: 700;
-  color: #8f6618;
 }
 
 .vehicle-image-real {
@@ -478,7 +504,16 @@ textarea {
   border: 1px solid rgba(184, 134, 31, 0.12);
   border-radius: var(--radius-lg);
   padding: 28px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.service-card:hover,
+.testimonial-card:hover,
+.point:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow);
+  border-color: rgba(184, 134, 31, 0.22);
 }
 
 .service-card h3,
@@ -522,25 +557,6 @@ textarea {
   color: rgba(255, 241, 211, 0.72);
 }
 
-.check-list {
-  list-style: none;
-}
-
-.check-list li {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 12px;
-}
-
-.check-list li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--accent);
-  font-weight: 800;
-}
-
 .fleet-label {
   display: inline-block;
   margin-bottom: 12px;
@@ -564,7 +580,8 @@ textarea {
 
 .business-text h2 {
   font-size: clamp(2rem, 3vw, 2.8rem);
-  line-height: 1.1;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   margin-bottom: 16px;
 }
 
@@ -578,11 +595,35 @@ textarea {
   gap: 18px;
 }
 
+.testimonials .section-heading {
+  max-width: 820px;
+}
+
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: "“";
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  font-size: 3rem;
+  line-height: 1;
+  color: rgba(200, 155, 60, 0.18);
+  font-weight: 800;
+}
+
+.testimonial-card p {
+  position: relative;
+  z-index: 1;
+}
+
 .testimonial-card span {
   display: inline-block;
   margin-top: 14px;
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cta-section {
@@ -599,7 +640,8 @@ textarea {
 
 .cta-text h2 {
   font-size: clamp(2rem, 3vw, 3rem);
-  line-height: 1.05;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
   margin-bottom: 18px;
   color: #fff4da;
 }
@@ -612,13 +654,17 @@ textarea {
 .contact-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .contact-list a,
 .contact-list span {
   color: rgba(255, 241, 211, 0.92);
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.contact-list a:hover {
+  color: #ffffff;
 }
 
 .contact-form {
@@ -651,6 +697,7 @@ textarea {
   outline: none;
   background: #ffffff;
   color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .form-group input::placeholder,
@@ -662,6 +709,12 @@ textarea {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(200, 155, 60, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
 }
 
 .site-footer {
@@ -722,6 +775,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .hero-card {
+    max-width: 760px;
+  }
+
   .trust-item {
     border-right: 0;
     border-bottom: 1px solid rgba(184, 134, 31, 0.1);
@@ -744,6 +801,7 @@ textarea {
 
   .section {
     padding: 72px 0;
+    scroll-margin-top: 96px;
   }
 
   .fleet-gallery-grid,
@@ -764,13 +822,25 @@ textarea {
     font-size: 2.5rem;
   }
 
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
   .section-heading h2,
   .business-text h2,
   .cta-text h2 {
     font-size: 2rem;
   }
 
-  .vehicle-image-placeholder,
   .vehicle-image-real {
     height: 200px;
   }
@@ -785,5 +855,61 @@ textarea {
 
   .footer-inner {
     flex-direction: column;
+  }
+
+  .contact-form,
+  .hero-card,
+  .business-box,
+  .service-card,
+  .advantage-card,
+  .testimonial-card,
+  .point,
+  .vehicle-card {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(100% - 20px, var(--container));
+  }
+
+  .header-inner {
+    min-height: 74px;
+  }
+
+  .hero {
+    padding: 58px 0 56px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.15rem;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+  }
+
+  .hero-card,
+  .contact-form,
+  .business-box,
+  .service-card,
+  .advantage-card,
+  .testimonial-card,
+  .point {
+    padding: 22px;
+  }
+
+  .vehicle-card-body {
+    padding: 20px;
+  }
+
+  .btn {
+    min-height: 50px;
+    padding: 13px 20px;
+  }
+
+  .cta-text p {
+    margin-bottom: 22px;
   }
 }
