@@ -31,12 +31,12 @@ export default function Home() {
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-content">
-              <p className="eyebrow">NCC professionale a Vicenza e Nord Italia</p>
-              <h1>Transfer affidabili per aziende, aeroporti, meeting ed eventi</h1>
+              <p className="eyebrow">NCC a Vicenza e Nord Italia</p>
+              <h1>Transfer professionali per aziende, aeroporti, eventi e clienti VIP</h1>
               <p className="hero-text">
-                Un servizio NCC pensato per chi cerca puntualità, discrezione e
-                un’esperienza di viaggio all’altezza del proprio business. Ideale per
-                manager, clienti, ospiti aziendali e transfer privati premium.
+                Driver4u offre un servizio NCC puntuale, riservato e curato in ogni dettaglio.
+                Accompagniamo aziende, professionisti, ospiti e viaggiatori privati con soluzioni
+                su misura per trasferimenti business, aeroportuali ed eventi.
               </p>
 
               <div className="hero-actions">
@@ -51,27 +51,27 @@ export default function Home() {
               <div className="hero-highlights">
                 <div>
                   <strong>Puntualità</strong>
-                  <span>Servizio su prenotazione</span>
+                  <span>Transfer organizzati con precisione</span>
                 </div>
                 <div>
-                  <strong>Business travel</strong>
-                  <span>Per aziende e professionisti</span>
+                  <strong>Servizio business</strong>
+                  <span>Per aziende, manager e ospiti</span>
                 </div>
                 <div>
-                  <strong>Disponibilità</strong>
-                  <span>Transfer aeroporti, fiere, eventi</span>
+                  <strong>Massima flessibilità</strong>
+                  <span>Aeroporti, meeting, eventi e tratte su misura</span>
                 </div>
               </div>
             </div>
 
             <div className="hero-card">
               <div className="hero-card-badge">Servizi Executive</div>
-              <h2>Soluzioni dedicate per aziende</h2>
+              <h2>Un partner affidabile per la mobilità aziendale</h2>
               <ul>
-                <li>Transfer da/per aeroporti e stazioni</li>
-                <li>Spostamenti per meeting e appuntamenti</li>
-                <li>Servizi per fiere, congressi ed eventi</li>
-                <li>Accoglienza clienti e ospiti VIP</li>
+                <li>Transfer da e per aeroporti e stazioni</li>
+                <li>Spostamenti per meeting, fiere e appuntamenti</li>
+                <li>Accoglienza clienti, partner e ospiti VIP</li>
+                <li>Servizi dedicati per eventi e roadshow</li>
                 <li>Prenotazioni singole o continuative</li>
               </ul>
               <a href="#aziende" className="text-link">
@@ -85,19 +85,19 @@ export default function Home() {
           <div className="container trust-grid">
             <div className="trust-item">
               <strong>Autisti qualificati</strong>
-              <span>Professionalità e riservatezza</span>
+              <span>Professionalità, riservatezza e cura del cliente</span>
             </div>
             <div className="trust-item">
               <strong>Flotta premium</strong>
-              <span>Comfort, eleganza, immagine</span>
+              <span>Comfort, eleganza e immagine impeccabile</span>
             </div>
             <div className="trust-item">
-              <strong>Servizio business</strong>
-              <span>Per aziende, manager e ospiti</span>
+              <strong>Servizio dedicato</strong>
+              <span>Soluzioni per aziende, privati ed eventi</span>
             </div>
             <div className="trust-item">
-              <strong>Assistenza diretta</strong>
-              <span>Preventivi e prenotazioni rapide</span>
+              <strong>Contatto diretto</strong>
+              <span>Preventivi rapidi e gestione semplice</span>
             </div>
           </div>
         </section>
@@ -106,11 +106,10 @@ export default function Home() {
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Flotta</p>
-              <h2>Veicoli eleganti per un’esperienza di livello business</h2>
+              <h2>Veicoli eleganti e confortevoli per ogni tipo di trasferimento</h2>
               <p>
-                La nostra flotta è selezionata per offrire comfort, affidabilità e una
-                presenza coerente con contesti professionali, transfer executive,
-                aeroportuali ed eventi.
+                La nostra flotta è selezionata per garantire comfort, affidabilità e una presenza
+                adeguata a contesti business, transfer aeroportuali, accoglienza ospiti ed eventi.
               </p>
             </div>
 
@@ -123,8 +122,8 @@ export default function Home() {
                   <span className="fleet-label">Business</span>
                   <h3>Berlina Executive</h3>
                   <p>
-                    Ideale per manager, appuntamenti, transfer rappresentanza e clienti
-                    business.
+                    Ideale per manager, professionisti e trasferimenti di rappresentanza con il
+                    massimo della discrezione.
                   </p>
                 </div>
               </article>
@@ -137,7 +136,8 @@ export default function Home() {
                   <span className="fleet-label">Premium</span>
                   <h3>Van Business</h3>
                   <p>
-                    Perfetto per piccoli gruppi, transfer aeroportuali e bagagli.
+                    Perfetto per piccoli gruppi, transfer aeroportuali e viaggi con più bagagli in
+                    totale comodità.
                   </p>
                 </div>
               </article>
@@ -150,7 +150,7 @@ export default function Home() {
                   <span className="fleet-label">Executive</span>
                   <h3>Auto di rappresentanza</h3>
                   <p>
-                    Pensata per ospiti VIP, dirigenti e trasferimenti di alto profilo.
+                    Una soluzione pensata per ospiti VIP, dirigenti e trasferimenti di alto livello.
                   </p>
                 </div>
               </article>
@@ -163,7 +163,8 @@ export default function Home() {
                   <span className="fleet-label">Comfort</span>
                   <h3>Monovolume premium</h3>
                   <p>
-                    Spaziosa e comoda per famiglie, eventi e viaggi più lunghi.
+                    Spazio, comfort e praticità per famiglie, eventi, tratte medio-lunghe e servizi
+                    personalizzati.
                   </p>
                 </div>
               </article>
@@ -176,7 +177,8 @@ export default function Home() {
                   <span className="fleet-label">Eventi</span>
                   <h3>Shuttle dedicato</h3>
                   <p>
-                    Soluzione utile per fiere, congressi, roadshow e transfer organizzati.
+                    Ideale per fiere, congressi, roadshow, eventi aziendali e transfer organizzati
+                    su più tratte.
                   </p>
                 </div>
               </article>
@@ -189,7 +191,7 @@ export default function Home() {
                   <span className="fleet-label">Custom</span>
                   <h3>Soluzione personalizzata</h3>
                   <p>
-                    Per richieste speciali, itinerari su misura e necessità operative dedicate.
+                    Per esigenze specifiche, itinerari su misura e richieste operative dedicate.
                   </p>
                 </div>
               </article>
@@ -201,10 +203,10 @@ export default function Home() {
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Servizi</p>
-              <h2>Un NCC pensato per esigenze professionali e private</h2>
+              <h2>Servizi NCC su misura per esigenze professionali e private</h2>
               <p>
-                Organizziamo transfer puntuali e personalizzati con un approccio
-                orientato alla qualità del servizio e alla semplicità operativa.
+                Organizziamo trasferimenti puntuali e personalizzati con un servizio curato,
+                semplice da prenotare e pensato per offrire la migliore esperienza di viaggio.
               </p>
             </div>
 
@@ -213,8 +215,8 @@ export default function Home() {
                 <div className="service-icon">✈</div>
                 <h3>Transfer aeroporti e stazioni</h3>
                 <p>
-                  Servizio da e per aeroporti, stazioni e hub principali con la
-                  massima puntualità.
+                  Collegamenti da e per aeroporti, stazioni e principali hub del Nord Italia con
+                  puntualità e assistenza dedicata.
                 </p>
               </article>
 
@@ -222,8 +224,8 @@ export default function Home() {
                 <div className="service-icon">●</div>
                 <h3>Meeting e appuntamenti</h3>
                 <p>
-                  Soluzioni dedicate per manager, professionisti e clienti che
-                  necessitano di trasferimenti affidabili.
+                  Trasferimenti affidabili per manager, professionisti e clienti che hanno bisogno
+                  di un servizio preciso e presentabile.
                 </p>
               </article>
 
@@ -231,17 +233,17 @@ export default function Home() {
                 <div className="service-icon">◆</div>
                 <h3>Fiere, congressi ed eventi</h3>
                 <p>
-                  Gestione transfer per eventi aziendali, ospiti, relatori e
-                  trasferimenti multipli su richiesta.
+                  Gestione transfer per relatori, ospiti, staff e partecipanti con organizzazione
+                  flessibile anche su più tratte.
                 </p>
               </article>
 
               <article className="service-card">
                 <div className="service-icon">★</div>
-                <h3>Transfer per clienti VIP</h3>
+                <h3>Accoglienza clienti VIP</h3>
                 <p>
-                  Accoglienza professionale e servizio discreto per ospiti,
-                  dirigenti e clienti di rappresentanza.
+                  Un servizio discreto e professionale per dirigenti, clienti di rappresentanza,
+                  partner e ospiti di alto profilo.
                 </p>
               </article>
 
@@ -249,8 +251,8 @@ export default function Home() {
                 <div className="service-icon">⌂</div>
                 <h3>Cerimonie ed eventi privati</h3>
                 <p>
-                  Un servizio elegante e confortevole per matrimoni, serate,
-                  eventi speciali e occasioni private.
+                  Trasferimenti eleganti e confortevoli per matrimoni, serate speciali, ricorrenze
+                  ed eventi privati.
                 </p>
               </article>
 
@@ -258,8 +260,8 @@ export default function Home() {
                 <div className="service-icon">↔</div>
                 <h3>Transfer personalizzati</h3>
                 <p>
-                  Itinerari su misura, spostamenti continuativi e servizi
-                  costruiti sulle esigenze del cliente.
+                  Itinerari su misura, servizi continuativi e soluzioni costruite in base a orari,
+                  tratte e necessità del cliente.
                 </p>
               </article>
             </div>
@@ -270,31 +272,31 @@ export default function Home() {
           <div className="container">
             <div className="section-heading center light">
               <p className="eyebrow">Perché scegliere Driver4u</p>
-              <h2>Un partner affidabile per la mobilità professionale</h2>
+              <h2>Affidabilità, immagine e gestione semplice in un unico servizio</h2>
             </div>
 
             <div className="advantages-grid advantages-grid-three">
               <article className="advantage-card">
-                <h3>Puntualità reale</h3>
+                <h3>Puntualità concreta</h3>
                 <p>
-                  Pianifichiamo ogni transfer con attenzione per garantire
-                  arrivi e partenze senza stress.
+                  Ogni transfer viene pianificato con attenzione per garantire partenze e arrivi
+                  puntuali, senza imprevisti.
                 </p>
               </article>
 
               <article className="advantage-card">
-                <h3>Discrezione e immagine</h3>
+                <h3>Discrezione e professionalità</h3>
                 <p>
-                  Un servizio adatto a contesti business, executive e relazioni
-                  con clienti e ospiti.
+                  Un servizio adatto a contesti business, executive e accoglienza di clienti e
+                  ospiti importanti.
                 </p>
               </article>
 
               <article className="advantage-card">
-                <h3>Gestione semplice</h3>
+                <h3>Organizzazione rapida</h3>
                 <p>
-                  Un referente diretto per prenotazioni, richieste ricorrenti e
-                  preventivi rapidi.
+                  Un referente diretto per prenotazioni, richieste ricorrenti, preventivi veloci e
+                  gestione personalizzata.
                 </p>
               </article>
             </div>
@@ -305,30 +307,30 @@ export default function Home() {
           <div className="container business-box">
             <div className="business-text">
               <p className="eyebrow">Servizi per aziende</p>
-              <h2>Un servizio NCC presentabile anche ai tuoi clienti</h2>
+              <h2>Un servizio NCC che valorizza anche l’immagine della tua azienda</h2>
               <p>
-                Supportiamo aziende, studi professionali, hotel, organizzatori
-                di eventi e realtà che desiderano offrire trasferimenti di
-                qualità a manager, collaboratori e ospiti.
+                Supportiamo aziende, studi professionali, hotel, organizzatori di eventi e realtà
+                che desiderano offrire trasferimenti affidabili e curati a manager, collaboratori,
+                clienti e ospiti.
               </p>
             </div>
 
             <div className="business-points">
               <div className="point">
                 <h3>Prenotazioni ricorrenti</h3>
-                <p>Per esigenze continuative e trasferimenti programmati.</p>
+                <p>Per esigenze continuative, trasferimenti programmati e gestione semplificata.</p>
               </div>
               <div className="point">
                 <h3>Accoglienza ospiti</h3>
-                <p>Un servizio curato per clienti, relatori e partner.</p>
+                <p>Un servizio professionale per clienti, relatori, partner e ospiti aziendali.</p>
               </div>
               <div className="point">
                 <h3>Preventivi rapidi</h3>
-                <p>Risposte rapide e gestione semplice delle richieste.</p>
+                <p>Risposte veloci e supporto diretto per organizzare ogni spostamento.</p>
               </div>
               <div className="point">
-                <h3>Servizio personalizzato</h3>
-                <p>Soluzioni su misura per tratte, orari e necessità operative.</p>
+                <h3>Servizio su misura</h3>
+                <p>Soluzioni personalizzate in base a tratte, orari, eventi e necessità operative.</p>
               </div>
             </div>
           </div>
@@ -338,32 +340,36 @@ export default function Home() {
           <div className="container">
             <div className="section-heading center">
               <p className="eyebrow">Affidabilità</p>
-              <h2>Il tipo di esperienza che vuoi offrire ai tuoi clienti</h2>
+              <h2>Un’esperienza pensata per lasciare un’ottima impressione</h2>
+              <p>
+                Offriamo un servizio che mette insieme puntualità, comfort e professionalità,
+                elementi essenziali quando si accompagna un cliente, un ospite o un collaboratore.
+              </p>
             </div>
 
             <div className="testimonials-grid">
               <article className="testimonial-card">
                 <p>
-                  “Servizio preciso, professionale e perfetto per trasferimenti
-                  business e accoglienza clienti.”
+                  “Puntualità, cortesia e grande attenzione ai dettagli. Un servizio ideale per
+                  trasferimenti business e accoglienza clienti.”
                 </p>
-                <span>Cliente aziendale</span>
+                <span>Servizi corporate</span>
               </article>
 
               <article className="testimonial-card">
                 <p>
-                  “Ottima impressione fin dal primo contatto. Puntuali,
-                  disponibili e molto curati.”
+                  “Ottima organizzazione fin dal primo contatto. Un riferimento affidabile per
+                  aeroporti, meeting ed esigenze last minute.”
                 </p>
                 <span>Transfer executive</span>
               </article>
 
               <article className="testimonial-card">
                 <p>
-                  “Una soluzione affidabile per aeroporti, meeting ed eventi con
-                  ospiti importanti.”
+                  “Un servizio professionale, elegante e ben gestito, perfetto per eventi,
+                  ospitalità e trasferimenti di rappresentanza.”
                 </p>
-                <span>Evento corporate</span>
+                <span>Eventi e ospitalità</span>
               </article>
             </div>
           </div>
@@ -375,25 +381,25 @@ export default function Home() {
               <p className="eyebrow">Contatti</p>
               <h2>Richiedi un preventivo o prenota il tuo transfer</h2>
               <p>
-                Contattaci per trasferimenti singoli, servizi business
-                continuativi, eventi o esigenze personalizzate.
+                Contattaci per trasferimenti singoli, servizi business continuativi, eventi,
+                transfer aeroportuali o richieste personalizzate.
               </p>
               <div className="contact-list">
                 <a href="tel:+390000000000">+39 000 000 0000</a>
-                <a href="mailto:info@ncc-driver4u.it">info@driver4u.it</a>
-                <span>Vicenza e Nord Italia</span>
+                <a href="mailto:info@driver4u.it">info@driver4u.it</a>
+                <span>Operativi a Vicenza e in tutto il Nord Italia</span>
               </div>
             </div>
 
             <form className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Nome e cognome</label>
-                <input id="name" type="text" placeholder="Il tuo nome" />
+                <input id="name" type="text" placeholder="Inserisci il tuo nome" />
               </div>
 
               <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input id="email" type="email" placeholder="La tua email" />
+                <input id="email" type="email" placeholder="Inserisci la tua email" />
               </div>
 
               <div className="form-group">
@@ -401,8 +407,9 @@ export default function Home() {
                 <select id="service">
                   <option>Transfer aeroporto</option>
                   <option>Servizio business</option>
-                  <option>Evento / fiera</option>
+                  <option>Fiera / congresso / evento</option>
                   <option>Transfer personalizzato</option>
+                  <option>Cerimonia / evento privato</option>
                 </select>
               </div>
 
@@ -411,7 +418,7 @@ export default function Home() {
                 <textarea
                   id="message"
                   rows="5"
-                  placeholder="Descrivi la tua richiesta"
+                  placeholder="Indica tratta, data, orario e numero di passeggeri"
                 ></textarea>
               </div>
 
@@ -430,8 +437,8 @@ export default function Home() {
               <img src="/logo.png" alt="Driver4u" className="logo-image footer-logo-image" />
             </a>
             <p className="footer-copy">
-              NCC professionale per aziende e privati. Transfer business,
-              aeroportuali, eventi e servizi personalizzati.
+              Servizio NCC professionale per aziende e privati. Transfer aeroportuali, business,
+              eventi e soluzioni personalizzate a Vicenza e Nord Italia.
             </p>
           </div>
 
