@@ -380,7 +380,7 @@ export default function Home() {
               </p>
               <div className="contact-list">
                 <a href="tel:+390000000000">+39 000 000 0000</a>
-                <a href="mailto:info@driver4u.it">info@driver4u.it</a>
+                <a href="mailto:info@ncc-driver4u.it">info@driver4u.it</a>
                 <span>Vicenza e Nord Italia</span>
               </div>
             </div>
