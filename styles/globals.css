@@ -661,9 +661,14 @@ button {
 
 .cta-box {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 30px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.cta-text,
+.contact-form {
+  min-height: 100%;
 }
 
 .cta-text h2 {
