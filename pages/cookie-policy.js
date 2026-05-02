@@ -1,0 +1,1 @@
+export default function CookiePolicy(){return (<div style={{padding:"40px"}}><h1>Cookie Policy</h1><p>Questo sito utilizza cookie tecnici necessari al funzionamento.</p></div>)};
