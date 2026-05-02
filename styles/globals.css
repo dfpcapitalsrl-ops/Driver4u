@@ -458,7 +458,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 8px;
 }
 
 .vehicle-image-real img {
@@ -467,12 +467,22 @@ button {
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1);
+  transform: scale(1.12);
   transition: transform 0.45s ease;
 }
 
+.vehicle-card:nth-child(5) .vehicle-image-real img,
+.vehicle-card:nth-child(6) .vehicle-image-real img {
+  transform: scale(1.28);
+}
+
 .vehicle-card:hover .vehicle-image-real img {
-  transform: scale(1.03);
+  transform: scale(1.16);
+}
+
+.vehicle-card:nth-child(5):hover .vehicle-image-real img,
+.vehicle-card:nth-child(6):hover .vehicle-image-real img {
+  transform: scale(1.32);
 }
 
 .vehicle-image-real::after {
