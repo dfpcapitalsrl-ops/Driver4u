@@ -1,4 +1,42 @@
+import { useState } from "react";
+
 export default function Home() {
+  const [formStatus, setFormStatus] = useState("");
+  const [isSending, setIsSending] = useState(false);
+
+  async function handleContactSubmit(event) {
+    event.preventDefault();
+    setIsSending(true);
+    setFormStatus("");
+
+    const form = event.currentTarget;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      service: form.service.value,
+      message: form.message.value,
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Errore invio richiesta");
+      }
+
+      form.reset();
+      setFormStatus("Richiesta inviata con successo. Ti risponderemo al più presto.");
+    } catch (error) {
+      setFormStatus("Non siamo riusciti a inviare la richiesta. Contattaci via WhatsApp o riprova tra poco.");
+    } finally {
+      setIsSending(false);
+    }
+  }
+
   return (
     <>
       <header className="site-header">
@@ -367,20 +405,20 @@ export default function Home() {
               </div>
             </div>
 
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleContactSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Nome e cognome</label>
-                <input id="name" type="text" placeholder="Inserisci il tuo nome" />
+                <input id="name" name="name" type="text" placeholder="Inserisci il tuo nome" required />
               </div>
 
               <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input id="email" type="email" placeholder="Inserisci la tua email" />
+                <input id="email" name="email" type="email" placeholder="Inserisci la tua email" required />
               </div>
 
               <div className="form-group">
                 <label htmlFor="service">Servizio richiesto</label>
-                <select id="service">
+                <select id="service" name="service">
                   <option>Transfer aeroporto</option>
                   <option>Servizio business</option>
                   <option>Fiera / congresso / evento</option>
@@ -393,14 +431,17 @@ export default function Home() {
                 <label htmlFor="message">Messaggio</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="5"
                   placeholder="Indica tratta, data, orario e numero di passeggeri"
+                  required
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-full">
-                Invia richiesta
+              <button type="submit" className="btn btn-primary btn-full" disabled={isSending}>
+                {isSending ? "Invio in corso..." : "Invia richiesta"}
               </button>
+              {formStatus && <p className="form-status">{formStatus}</p>}
             </form>
           </div>
         </section>
