@@ -154,6 +154,18 @@ button {
   background: #faf7f1;
 }
 
+.btn-whatsapp {
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.22);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  background: #20ba5a;
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.3);
+}
+
 .btn-outline {
   border-color: rgba(255, 255, 255, 0.18);
   color: #fff6df;
@@ -253,7 +265,7 @@ button {
 }
 
 .hero {
-  padding: 96px 0 74px;
+  padding: 72px 0 62px;
   background:
     radial-gradient(circle at top right, rgba(200, 155, 60, 0.18), transparent 30%),
     linear-gradient(135deg, #181818 0%, #232323 100%);
@@ -262,42 +274,46 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1fr) 0.78fr;
   gap: 40px;
   align-items: center;
 }
 
+.hero-content {
+  max-width: 720px;
+}
+
 .hero-content h1 {
-  font-size: clamp(2.6rem, 5vw, 4.9rem);
-  line-height: 0.98;
+  font-size: clamp(2.6rem, 4.15vw, 4.25rem);
+  line-height: 1.03;
   letter-spacing: -0.05em;
-  max-width: 860px;
+  max-width: 720px;
   margin-bottom: 22px;
   color: #fff4da;
 }
 
 .hero-text {
-  max-width: 700px;
+  max-width: 680px;
   color: rgba(255, 241, 211, 0.82);
-  font-size: 1.08rem;
-  margin-bottom: 30px;
+  font-size: 1.02rem;
+  margin-bottom: 28px;
 }
 
 .hero-actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .hero-highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 14px;
 }
 
 .hero-highlights div {
-  padding: 18px;
+  padding: 16px;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(200, 155, 60, 0.14);
@@ -312,13 +328,13 @@ button {
 
 .hero-highlights strong {
   display: block;
-  font-size: 1rem;
+  font-size: 0.96rem;
   margin-bottom: 4px;
   color: #fff4da;
 }
 
 .hero-highlights span {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: rgba(255, 241, 211, 0.74);
 }
 
@@ -759,6 +775,14 @@ textarea {
   .business-box,
   .cta-box {
     grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    max-width: 760px;
+  }
+
+  .hero-content h1 {
+    max-width: 760px;
   }
 
   .fleet-gallery-grid,
