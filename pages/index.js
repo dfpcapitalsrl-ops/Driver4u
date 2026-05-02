@@ -46,6 +46,14 @@ export default function Home() {
                 <a href="tel:+390000000000" className="btn btn-secondary">
                   Chiama ora
                 </a>
+                <a
+                  href="https://wa.me/390000000000?text=Ciao%20Driver4u,%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20NCC"
+                  className="btn btn-whatsapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
               </div>
 
               <div className="hero-highlights">
