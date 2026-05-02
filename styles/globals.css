@@ -467,11 +467,21 @@ button {
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1.28);
+  transform: scale(1.16);
   transition: transform 0.45s ease;
 }
 
+.vehicle-card:nth-child(5) .vehicle-image-real img,
+.vehicle-card:nth-child(6) .vehicle-image-real img {
+  transform: scale(1.28);
+}
+
 .vehicle-card:hover .vehicle-image-real img {
+  transform: scale(1.2);
+}
+
+.vehicle-card:nth-child(5):hover .vehicle-image-real img,
+.vehicle-card:nth-child(6):hover .vehicle-image-real img {
   transform: scale(1.32);
 }
 
