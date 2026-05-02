@@ -458,7 +458,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 8px;
 }
 
 .vehicle-image-real img {
@@ -467,12 +467,12 @@ button {
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1);
+  transform: scale(1.28);
   transition: transform 0.45s ease;
 }
 
 .vehicle-card:hover .vehicle-image-real img {
-  transform: scale(1.03);
+  transform: scale(1.32);
 }
 
 .vehicle-image-real::after {
@@ -661,9 +661,17 @@ button {
 
 .cta-box {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 30px;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: stretch;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 580px;
+  padding: 28px 0;
 }
 
 .cta-text h2 {
@@ -676,13 +684,14 @@ button {
 
 .cta-text p {
   color: rgba(255, 241, 211, 0.78);
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .contact-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 36px;
 }
 
 .contact-list a,
@@ -696,6 +705,11 @@ button {
 }
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 580px;
+  gap: 16px;
   background: #fffdfa;
   color: var(--text);
   border-radius: 24px;
@@ -705,7 +719,7 @@ button {
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 .form-group label {
@@ -728,6 +742,11 @@ button {
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
+.form-group input,
+.form-group select {
+  height: 56px;
+}
+
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: #9b8a72;
@@ -741,8 +760,12 @@ button {
 }
 
 textarea {
-  resize: vertical;
-  min-height: 130px;
+  resize: none;
+  min-height: 160px;
+}
+
+.contact-form button {
+  margin-top: 0;
 }
 
 .site-footer {
@@ -787,6 +810,20 @@ textarea {
   .business-box,
   .cta-box {
     grid-template-columns: 1fr;
+  }
+
+  .cta-text,
+  .contact-form {
+    min-height: auto;
+  }
+
+  .cta-text {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .contact-list {
+    margin-top: 24px;
   }
 
   .hero-content {
@@ -960,6 +997,6 @@ textarea {
   }
 
   .cta-text p {
-    margin-bottom: 22px;
+    margin-bottom: 0;
   }
 }
