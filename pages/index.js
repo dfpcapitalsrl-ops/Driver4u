@@ -43,11 +43,11 @@ export default function Home() {
                 <a href="#contatti" className="btn btn-primary">
                   Richiedi preventivo
                 </a>
-                <a href="tel:+390000000000" className="btn btn-secondary">
+                <a href="tel:+393792594122" className="btn btn-secondary">
                   Chiama ora
                 </a>
                 <a
-                  href="https://wa.me/390000000000?text=Ciao%20Driver4u,%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20NCC"
+                  href="https://wa.me/393792594122?text=Ciao%20Driver4u,%20vorrei%20richiedere%20un%20preventivo%20per%20un%20servizio%20NCC"
                   className="btn btn-whatsapp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -400,8 +400,8 @@ export default function Home() {
                 <li>Servizio operativo a Vicenza e Nord Italia</li>
               </ul>
               <div className="contact-list">
-                <a href="tel:+390000000000">+39 000 000 0000</a>
-                <a href="mailto:info@driver4u.it">info@driver4u.it</a>
+                <a href="tel:+393792594122">+39 379 259 4122</a>
+                <a href="mailto:info@ncc-driver4u.it">info@ncc-driver4u.it</a>
                 <span>Operativi a Vicenza e in tutto il Nord Italia</span>
               </div>
             </div>
