@@ -265,7 +265,7 @@ button {
 }
 
 .hero {
-  padding: 72px 0 62px;
+  padding: 60px 0 50px;
   background:
     radial-gradient(circle at top right, rgba(200, 155, 60, 0.18), transparent 30%),
     linear-gradient(135deg, #181818 0%, #232323 100%);
@@ -274,46 +274,47 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 0.78fr;
+  grid-template-columns: minmax(0, 0.95fr) 0.78fr;
   gap: 40px;
   align-items: center;
 }
 
 .hero-content {
-  max-width: 720px;
+  max-width: 670px;
 }
 
 .hero-content h1 {
-  font-size: clamp(2.6rem, 4.15vw, 4.25rem);
+  font-size: clamp(2.35rem, 3.85vw, 3.85rem);
   line-height: 1.03;
   letter-spacing: -0.05em;
-  max-width: 720px;
-  margin-bottom: 22px;
+  max-width: 670px;
+  margin-bottom: 18px;
   color: #fff4da;
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 640px;
   color: rgba(255, 241, 211, 0.82);
-  font-size: 1.02rem;
-  margin-bottom: 28px;
+  font-size: 0.98rem;
+  margin-bottom: 24px;
 }
 
 .hero-actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .hero-highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 12px;
 }
 
 .hero-highlights div {
-  padding: 16px;
+  min-height: 104px;
+  padding: 14px;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(200, 155, 60, 0.14);
@@ -328,13 +329,14 @@ button {
 
 .hero-highlights strong {
   display: block;
-  font-size: 0.96rem;
+  font-size: 0.92rem;
   margin-bottom: 4px;
   color: #fff4da;
 }
 
 .hero-highlights span {
-  font-size: 0.9rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
   color: rgba(255, 241, 211, 0.74);
 }
 
