@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [formStatus, setFormStatus] = useState("");
   const [isSending, setIsSending] = useState(false);
+  const [showCookieBanner, setShowCookieBanner] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && localStorage.getItem("driver4u-cookie-consent") !== "accepted") {
+      setShowCookieBanner(true);
+    }
+  }, []);
+
+  function acceptCookies() {
+    localStorage.setItem("driver4u-cookie-consent", "accepted");
+    setShowCookieBanner(false);
+  }
 
   async function handleContactSubmit(event) {
     event.preventDefault();
@@ -447,6 +459,31 @@ export default function Home() {
         </section>
       </main>
 
+      <a
+        href="https://wa.me/393792594122?text=Ciao%20Driver4u,%20vorrei%20richiedere%20informazioni%20per%20un%20servizio%20NCC"
+        className="floating-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contatta Driver4u su WhatsApp"
+      >
+        WhatsApp
+      </a>
+
+      {showCookieBanner && (
+        <div className="cookie-banner" role="dialog" aria-label="Informativa cookie">
+          <div>
+            <strong>Utilizziamo cookie tecnici</strong>
+            <p>
+              Usiamo cookie necessari al corretto funzionamento del sito. Per maggiori informazioni consulta la Cookie Policy.
+            </p>
+          </div>
+          <div className="cookie-actions">
+            <a href="/cookie-policy">Cookie Policy</a>
+            <button type="button" onClick={acceptCookies}>Accetta</button>
+          </div>
+        </div>
+      )}
+
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>
@@ -464,7 +501,8 @@ export default function Home() {
             <a href="#servizi">Servizi</a>
             <a href="#aziende">Aziende</a>
             <a href="#contatti">Contatti</a>
-            <a href="#">Privacy Policy</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/cookie-policy">Cookie Policy</a>
           </div>
         </div>
       </footer>
