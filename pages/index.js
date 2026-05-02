@@ -394,6 +394,11 @@ export default function Home() {
                 Contattaci per trasferimenti singoli, servizi business continuativi, eventi,
                 transfer aeroportuali o richieste personalizzate.
               </p>
+              <ul className="cta-benefits">
+                <li>Risposta rapida e preventivo personalizzato</li>
+                <li>Transfer aeroportuali, business ed eventi</li>
+                <li>Servizio operativo a Vicenza e Nord Italia</li>
+              </ul>
               <div className="contact-list">
                 <a href="tel:+390000000000">+39 000 000 0000</a>
                 <a href="mailto:info@driver4u.it">info@driver4u.it</a>
