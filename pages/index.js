@@ -346,45 +346,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section testimonials">
-          <div className="container">
-            <div className="section-heading center">
-              <p className="eyebrow">Affidabilità</p>
-              <h2>Un’esperienza pensata per lasciare un’ottima impressione</h2>
-              <p>
-                Offriamo un servizio che mette insieme puntualità, comfort e professionalità,
-                elementi essenziali quando si accompagna un cliente, un ospite o un collaboratore.
-              </p>
-            </div>
-
-            <div className="testimonials-grid">
-              <article className="testimonial-card">
-                <p>
-                  “Puntualità, cortesia e grande attenzione ai dettagli. Un servizio ideale per
-                  trasferimenti business e accoglienza clienti.”
-                </p>
-                <span>Servizi corporate</span>
-              </article>
-
-              <article className="testimonial-card">
-                <p>
-                  “Ottima organizzazione fin dal primo contatto. Un riferimento affidabile per
-                  aeroporti, meeting ed esigenze last minute.”
-                </p>
-                <span>Transfer executive</span>
-              </article>
-
-              <article className="testimonial-card">
-                <p>
-                  “Un servizio professionale, elegante e ben gestito, perfetto per eventi,
-                  ospitalità e trasferimenti di rappresentanza.”
-                </p>
-                <span>Eventi e ospitalità</span>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section id="contatti" className="section cta-section">
           <div className="container cta-box">
             <div className="cta-text">
