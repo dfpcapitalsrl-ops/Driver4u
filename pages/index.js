@@ -6,13 +6,13 @@ export default function Home() {
   const [showCookieBanner, setShowCookieBanner] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && localStorage.getItem("driver4u-cookie-consent") !== "accepted") {
-      setShowCookieBanner(true);
-    }
+    setShowCookieBanner(true);
   }, []);
 
   function acceptCookies() {
-    localStorage.setItem("driver4u-cookie-consent", "accepted");
+    if (typeof window !== "undefined") {
+      localStorage.setItem("driver4u-cookie-consent", "accepted");
+    }
     setShowCookieBanner(false);
   }
 
@@ -36,9 +36,7 @@ export default function Home() {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) {
-        throw new Error("Errore invio richiesta");
-      }
+      if (!response.ok) throw new Error("Errore invio richiesta");
 
       form.reset();
       setFormStatus("Richiesta inviata con successo. Ti risponderemo al più presto.");
@@ -53,12 +51,8 @@ export default function Home() {
     <>
       <header className="site-header">
         <div className="container header-inner">
-          <a href="#" className="logo" aria-label="Driver4u home">
-            <img src="/logo.png" alt="Driver4u" className="logo-image" />
-          </a>
-          <nav className="main-nav">
-            <a href="#flotta">Flotta</a><a href="#servizi">Servizi</a><a href="#vantaggi">Perché noi</a><a href="#aziende">Aziende</a><a href="#contatti">Contatti</a>
-          </nav>
+          <a href="#" className="logo" aria-label="Driver4u home"><img src="/logo.png" alt="Driver4u" className="logo-image" /></a>
+          <nav className="main-nav"><a href="#flotta">Flotta</a><a href="#servizi">Servizi</a><a href="#vantaggi">Perché noi</a><a href="#aziende">Aziende</a><a href="#contatti">Contatti</a></nav>
           <a href="#contatti" className="btn btn-outline">Richiedi preventivo</a>
           <button className="menu-toggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
         </div>
@@ -72,7 +66,7 @@ export default function Home() {
         <section id="aziende" className="section"><div className="container business-box"><div className="business-text"><p className="eyebrow">Servizi per aziende</p><h2>Un servizio NCC che valorizza anche l’immagine della tua azienda</h2><p>Supportiamo aziende, studi professionali, hotel, organizzatori di eventi e realtà che desiderano offrire trasferimenti affidabili e curati a manager, collaboratori, clienti e ospiti.</p></div><div className="business-points"><div className="point"><h3>Prenotazioni ricorrenti</h3><p>Per esigenze continuative, trasferimenti programmati e gestione semplificata.</p></div><div className="point"><h3>Accoglienza ospiti</h3><p>Un servizio professionale per clienti, relatori, partner e ospiti aziendali.</p></div><div className="point"><h3>Preventivi rapidi</h3><p>Risposte veloci e supporto diretto per organizzare ogni spostamento.</p></div><div className="point"><h3>Servizio su misura</h3><p>Soluzioni personalizzate in base a tratte, orari, eventi e necessità operative.</p></div></div></div></section>
         <section id="contatti" className="section cta-section"><div className="container cta-box"><div className="cta-text"><p className="eyebrow">Contatti</p><h2>Richiedi un preventivo o prenota il tuo transfer</h2><p>Contattaci per trasferimenti singoli, servizi business continuativi, eventi, transfer aeroportuali o richieste personalizzate.</p><ul className="cta-benefits"><li>Risposta rapida e preventivo personalizzato</li><li>Transfer aeroportuali, business ed eventi</li><li>Servizio operativo a Vicenza e Nord Italia</li></ul><div className="contact-list"><a href="tel:+393792594122">+39 379 259 4122</a><a href="mailto:info@ncc-driver4u.it">info@ncc-driver4u.it</a><span>Operativi a Vicenza e in tutto il Nord Italia</span></div></div><form className="contact-form" onSubmit={handleContactSubmit}><div className="form-group"><label htmlFor="name">Nome e cognome</label><input id="name" name="name" type="text" placeholder="Inserisci il tuo nome" required /></div><div className="form-group"><label htmlFor="email">Email</label><input id="email" name="email" type="email" placeholder="Inserisci la tua email" required /></div><div className="form-group"><label htmlFor="service">Servizio richiesto</label><select id="service" name="service"><option>Transfer aeroporto</option><option>Servizio business</option><option>Fiera / congresso / evento</option><option>Transfer personalizzato</option><option>Cerimonia / evento privato</option></select></div><div className="form-group"><label htmlFor="message">Messaggio</label><textarea id="message" name="message" rows="5" placeholder="Indica tratta, data, orario e numero di passeggeri" required></textarea></div><button type="submit" className="btn btn-primary btn-full" disabled={isSending}>{isSending ? "Invio in corso..." : "Invia richiesta"}</button>{formStatus && <p className="form-status">{formStatus}</p>}</form></div></section>
       </main>
-      <a href="https://wa.me/393792594122?text=Ciao%20Driver4u,%20vorrei%20richiedere%20informazioni%20per%20un%20servizio%20NCC" className="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contatta Driver4u su WhatsApp">WhatsApp</a>
+      <a href="https://wa.me/393792594122?text=Ciao%20Driver4u,%20vorrei%20richiedere%20informazioni%20per%20un%20servizio%20NCC" className="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contatta Driver4u su WhatsApp"><span aria-hidden="true">☏</span><span>WhatsApp</span></a>
       {showCookieBanner && <div className="cookie-banner" role="dialog" aria-label="Informativa cookie"><div><strong>Utilizziamo cookie tecnici</strong><p>Usiamo cookie necessari al corretto funzionamento del sito. Per maggiori informazioni consulta la Cookie Policy.</p></div><div className="cookie-actions"><a href="/cookie-policy">Cookie Policy</a><button type="button" onClick={acceptCookies}>Accetta</button></div></div>}
       <footer className="site-footer"><div className="container footer-inner"><div><a href="#" className="logo footer-logo" aria-label="Driver4u home"><img src="/logo.png" alt="Driver4u" className="logo-image footer-logo-image" /></a><p className="footer-copy">Driver4u di Umberto De Tomasi<br />P.IVA / C.F. 04482830249<br />Via Toscana 23, 36016 Thiene (VI)<br />PEC: umberto.detomasi@pec.it</p></div><div className="footer-links"><a href="#flotta">Flotta</a><a href="#servizi">Servizi</a><a href="#aziende">Aziende</a><a href="#contatti">Contatti</a><a href="/privacy-policy">Privacy Policy</a><a href="/cookie-policy">Cookie Policy</a></div></div></footer>
     </>
