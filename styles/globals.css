@@ -668,7 +668,7 @@ button {
 
 .cta-text,
 .contact-form {
-  min-height: 100%;
+  min-height: 520px;
 }
 
 .cta-text h2 {
@@ -792,6 +792,11 @@ textarea {
   .business-box,
   .cta-box {
     grid-template-columns: 1fr;
+  }
+
+  .cta-text,
+  .contact-form {
+    min-height: auto;
   }
 
   .hero-content {
