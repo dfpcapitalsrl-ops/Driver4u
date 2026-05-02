@@ -467,22 +467,22 @@ button {
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1.08);
+  transform: scale(1.02);
   transition: transform 0.45s ease;
 }
 
 .vehicle-card:nth-child(5) .vehicle-image-real img,
 .vehicle-card:nth-child(6) .vehicle-image-real img {
-  transform: scale(1.28);
+  transform: scale(1.2);
 }
 
 .vehicle-card:hover .vehicle-image-real img {
-  transform: scale(1.12);
+  transform: scale(1.06);
 }
 
 .vehicle-card:nth-child(5):hover .vehicle-image-real img,
 .vehicle-card:nth-child(6):hover .vehicle-image-real img {
-  transform: scale(1.32);
+  transform: scale(1.24);
 }
 
 .vehicle-image-real::after {
@@ -671,17 +671,17 @@ button {
 
 .cta-box {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 48px;
+  align-items: center;
 }
 
 .cta-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 580px;
-  padding: 28px 0;
+  justify-content: center;
+  min-height: auto;
+  padding: 0;
 }
 
 .cta-text h2 {
@@ -693,21 +693,57 @@ button {
 }
 
 .cta-text p {
+  max-width: 640px;
   color: rgba(255, 241, 211, 0.78);
   margin-bottom: 0;
 }
 
-.contact-list {
-  display: flex;
-  flex-direction: column;
+.cta-benefits {
+  list-style: none;
+  display: grid;
   gap: 12px;
-  margin-top: 36px;
+  margin: 26px 0 0;
+  max-width: 620px;
+}
+
+.cta-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 241, 211, 0.9);
+  font-weight: 700;
+}
+
+.cta-benefits li::before {
+  content: "✓";
+  width: 24px;
+  height: 24px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 24px;
+  border-radius: 999px;
+  background: rgba(200, 155, 60, 0.16);
+  color: #f4d07f;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-width: 620px;
+  margin-top: 30px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(200, 155, 60, 0.14);
 }
 
 .contact-list a,
 .contact-list span {
   color: rgba(255, 241, 211, 0.92);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .contact-list a:hover {
@@ -718,7 +754,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 580px;
+  min-height: 540px;
   gap: 16px;
   background: #fffdfa;
   color: var(--text);
@@ -771,7 +807,7 @@ button {
 
 textarea {
   resize: none;
-  min-height: 160px;
+  min-height: 150px;
 }
 
 .contact-form button {
