@@ -1,0 +1,1 @@
+export default function PrivacyPolicy(){return (<div style={{padding:"40px"}}><h1>Privacy Policy</h1><p>Questa pagina descrive le modalità di gestione dei dati personali raccolti dal sito Driver4u.</p><p>I dati inviati tramite form vengono utilizzati esclusivamente per rispondere alle richieste.</p></div>)};
