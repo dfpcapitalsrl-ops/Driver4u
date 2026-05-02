@@ -124,82 +124,84 @@ export default function Home() {
             <div className="fleet-gallery-grid">
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-1.jpg" alt="Berlina Executive Driver4u" />
+                  <img src="/fleet-1.jpg" alt="Mercedes Vito Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Business</span>
-                  <h3>Berlina Executive</h3>
+                  <h3>Mercedes Vito</h3>
                   <p>
-                    Ideale per manager, professionisti e trasferimenti di rappresentanza con il
-                    massimo della discrezione.
+                    Spazioso e versatile, ideale per transfer aeroportuali, piccoli gruppi,
+                    bagagli e servizi business con massimo comfort.
                   </p>
                 </div>
               </article>
 
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-2.jpg" alt="Van Business Driver4u" />
+                  <img src="/fleet-2.jpg" alt="Mercedes V Class Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Premium</span>
-                  <h3>Van Business</h3>
+                  <h3>Mercedes V Class</h3>
                   <p>
-                    Perfetto per piccoli gruppi, transfer aeroportuali e viaggi con più bagagli in
-                    totale comodità.
+                    Van premium elegante e confortevole, perfetto per clienti VIP, executive,
+                    famiglie e trasferimenti con più passeggeri.
                   </p>
                 </div>
               </article>
 
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-3.jpg" alt="Auto di rappresentanza Driver4u" />
+                  <img src="/fleet-3.jpg" alt="Mercedes E Class Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Executive</span>
-                  <h3>Auto di rappresentanza</h3>
+                  <h3>Mercedes E Class</h3>
                   <p>
-                    Una soluzione pensata per ospiti VIP, dirigenti e trasferimenti di alto livello.
+                    Berlina executive raffinata, pensata per manager, professionisti e
+                    trasferimenti di rappresentanza in totale discrezione.
                   </p>
                 </div>
               </article>
 
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-4.jpg" alt="Monovolume premium Driver4u" />
+                  <img src="/fleet-4.jpg" alt="Mercedes E Class SW Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Comfort</span>
-                  <h3>Monovolume premium</h3>
+                  <h3>Mercedes E Class SW</h3>
                   <p>
-                    Spazio, comfort e praticità per famiglie, eventi, tratte medio-lunghe e servizi
-                    personalizzati.
+                    Station wagon elegante e capiente, ideale per tratte medio-lunghe,
+                    transfer aeroportuali e viaggi con bagagli.
                   </p>
                 </div>
               </article>
 
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-5.jpg" alt="Shuttle dedicato Driver4u" />
+                  <img src="/fleet-5.jpg" alt="Mercedes C Class SW Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
                   <span className="fleet-label">Eventi</span>
-                  <h3>Shuttle dedicato</h3>
+                  <h3>Mercedes C Class SW</h3>
                   <p>
-                    Ideale per fiere, congressi, roadshow, eventi aziendali e transfer organizzati
-                    su più tratte.
+                    Soluzione dinamica e confortevole per transfer business, eventi,
+                    appuntamenti e spostamenti quotidiani.
                   </p>
                 </div>
               </article>
 
               <article className="vehicle-card">
                 <div className="vehicle-image-real">
-                  <img src="/fleet-6.jpg" alt="Soluzione personalizzata Driver4u" />
+                  <img src="/fleet-6.jpg" alt="Porsche Panamera Driver4u" />
                 </div>
                 <div className="vehicle-card-body">
-                  <span className="fleet-label">Custom</span>
-                  <h3>Soluzione personalizzata</h3>
+                  <span className="fleet-label">Luxury</span>
+                  <h3>Porsche Panamera</h3>
                   <p>
-                    Per esigenze specifiche, itinerari su misura e richieste operative dedicate.
+                    Auto luxury sportiva ed elegante, dedicata a clienti VIP, eventi esclusivi
+                    e trasferimenti di alto profilo.
                   </p>
                 </div>
               </article>
