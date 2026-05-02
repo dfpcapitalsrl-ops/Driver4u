@@ -671,8 +671,8 @@ button {
 
 .cta-box {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  gap: 44px;
   align-items: center;
 }
 
@@ -751,15 +751,18 @@ button {
 }
 
 .contact-form {
+  width: 100%;
+  max-width: 560px;
+  justify-self: end;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 540px;
-  gap: 16px;
+  min-height: 500px;
+  gap: 14px;
   background: #fffdfa;
   color: var(--text);
   border-radius: 24px;
-  padding: 28px;
+  padding: 24px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(184, 134, 31, 0.12);
 }
@@ -770,9 +773,9 @@ button {
 
 .form-group label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
 }
 
 .form-group input,
@@ -780,8 +783,8 @@ button {
 .form-group textarea {
   width: 100%;
   border: 1px solid rgba(184, 134, 31, 0.16);
-  border-radius: 14px;
-  padding: 14px 16px;
+  border-radius: 13px;
+  padding: 12px 15px;
   outline: none;
   background: #ffffff;
   color: var(--text);
@@ -790,7 +793,7 @@ button {
 
 .form-group input,
 .form-group select {
-  height: 56px;
+  height: 50px;
 }
 
 .form-group input::placeholder,
@@ -807,10 +810,11 @@ button {
 
 textarea {
   resize: none;
-  min-height: 150px;
+  min-height: 128px;
 }
 
 .contact-form button {
+  min-height: 52px;
   margin-top: 0;
 }
 
@@ -866,6 +870,11 @@ textarea {
   .cta-text {
     justify-content: flex-start;
     padding: 0;
+  }
+
+  .contact-form {
+    max-width: none;
+    justify-self: stretch;
   }
 
   .contact-list {
