@@ -619,6 +619,10 @@ button {
   gap: 18px;
 }
 
+.testimonials {
+  padding-top: 44px;
+}
+
 .testimonials .section-heading {
   max-width: 920px;
 }
@@ -834,6 +838,10 @@ textarea {
   .section {
     padding: 56px 0 72px;
     scroll-margin-top: 96px;
+  }
+
+  .testimonials {
+    padding-top: 34px;
   }
 
   .fleet-gallery-grid,
