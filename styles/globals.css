@@ -662,13 +662,15 @@ button {
 .cta-box {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 30px;
+  gap: 40px;
   align-items: stretch;
 }
 
-.cta-text,
-.contact-form {
-  min-height: 520px;
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 0;
 }
 
 .cta-text h2 {
@@ -681,13 +683,14 @@ button {
 
 .cta-text p {
   color: rgba(255, 241, 211, 0.78);
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .contact-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 36px;
 }
 
 .contact-list a,
@@ -701,6 +704,10 @@ button {
 }
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
   background: #fffdfa;
   color: var(--text);
   border-radius: 24px;
@@ -710,7 +717,7 @@ button {
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 .form-group label {
@@ -733,6 +740,11 @@ button {
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
+.form-group input,
+.form-group select {
+  height: 56px;
+}
+
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: #9b8a72;
@@ -746,8 +758,12 @@ button {
 }
 
 textarea {
-  resize: vertical;
-  min-height: 130px;
+  resize: none;
+  min-height: 140px;
+}
+
+.contact-form button {
+  margin-top: auto;
 }
 
 .site-footer {
@@ -794,9 +810,13 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .cta-text,
-  .contact-form {
-    min-height: auto;
+  .cta-text {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .contact-list {
+    margin-top: 24px;
   }
 
   .hero-content {
@@ -970,6 +990,6 @@ textarea {
   }
 
   .cta-text p {
-    margin-bottom: 22px;
+    margin-bottom: 0;
   }
 }
